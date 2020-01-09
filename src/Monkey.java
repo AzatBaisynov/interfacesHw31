@@ -16,6 +16,11 @@ public class Monkey implements Climable, Takeable, Eatable {
     }
 
     @Override
+    public void eatFruit(Banana banana){
+        System.out.println(this.name + " eating " + banana.getName());
+    }
+
+    @Override
     public String eatable(String foodName){
         return "Monkey eat " + foodName + ".";
     }
